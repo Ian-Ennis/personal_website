@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import EachProject from "./EachProject";
 
 function Projects() {
   const projectData = [
     {
       title: "Sigma Shipyards",
       stack: "React/Redux with Ruby on Rails API",
-      image: "https://imgur.com/BsUdIJj",
+      image: "https://imgur.com/J0qcb5j.png",
       description:
         "Game-focused spaceship builder with the purpose of guiding users through a journey in sci-fi space retro-futurism",
       links: {
@@ -22,13 +23,13 @@ function Projects() {
     {
       title: "Activity Tracker",
       stack: "React with Ruby on Rails API",
-      image: "https://imgur.com/t5ToHxX",
+      image: "https://imgur.com/t5ToHxX.png",
       description:
         "A tool to provide fans of physical activity with the ability to record activity sessions for meditation, yoga, and cardio",
       links: {
         front: "https://github.com/Ian-Ennis/activity_tracker",
         back: "https://github.com/Ian-Ennis/activity_tracker_backend",
-        demo: "https://github.com/Ian-Ennis/activity_tracker_backend",
+        demo: "https://www.loom.com/share/eb54a2c52f2b426290279dc88aeb3f0d",
       },
       bullets: [
         "Implemented user authentication using JSON Web Tokens",
@@ -39,7 +40,7 @@ function Projects() {
     {
       title: "Cozy Cat Cafe",
       stack: "React",
-      image: "https://imgur.com/FpF2GY6",
+      image: "https://imgur.com/FpF2GY6.png",
       description:
         "A friendly place for people to hangout with cats, browse through a collection of books, and submit cat adoption forms",
       links: {
@@ -55,7 +56,7 @@ function Projects() {
     {
       title: "Starvault",
       stack: "React",
-      image: "https://imgur.com/6BjmDgr",
+      image: "https://imgur.com/6BjmDgr.png",
       description:
         "A place for amateur astronomers to upload their interstellar  discoveries",
       links: {
@@ -68,7 +69,34 @@ function Projects() {
     },
   ];
 
-  return <div></div>;
+  console.log("render")
+
+  const [showDetails, setShowDetails] = useState(null);
+
+  function handleProjectClick(e) {
+    e.preventDefault();
+    console.log("in handle project click")
+
+    if (setShowDetails !== e.target.id) {
+        console.log("state is null; setting to project title.")
+      setShowDetails(e.target.id);
+      console.log(setShowDetails)
+    } else {
+        console.log("state is assigned project title. Setting to null.")
+        setShowDetails(null)
+    }
+  }
+
+  const project = projectData.map((p, index) => (
+    <EachProject
+      key={index}
+      project={p}
+      handleProjectClick={handleProjectClick}
+      selectedProject={showDetails}
+    />
+  ));
+
+  return <div className="project_descriptions">{project}</div>;
 }
 
 export default Projects;
