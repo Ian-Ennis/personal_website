@@ -21,7 +21,7 @@ function Projects() {
       ],
     },
     {
-      title: "Activity Tracker",
+      title: "Leg-Up Activity Tracker",
       stack: "React with Ruby on Rails API",
       image: "https://imgur.com/t5ToHxX.png",
       description:
@@ -39,7 +39,7 @@ function Projects() {
     },
     {
       title: "Cozy Cat Cafe",
-      stack: "React",
+      stack: "React with JSON Server",
       image: "https://imgur.com/FpF2GY6.png",
       description:
         "A friendly place for people to hangout with cats, browse through a collection of books, and submit cat adoption forms",
@@ -68,22 +68,16 @@ function Projects() {
       ],
     },
   ];
-
-  console.log("render")
-
+  
   const [showDetails, setShowDetails] = useState(null);
 
   function handleProjectClick(e) {
     e.preventDefault();
-    console.log("in handle project click")
-
-    if (setShowDetails !== e.target.id) {
-        console.log("state is null; setting to project title.")
-      setShowDetails(e.target.id);
-      console.log(setShowDetails)
+    
+    if (showDetails !== e.target.id) {
+        setShowDetails(e.target.id)
     } else {
-        console.log("state is assigned project title. Setting to null.")
-        setShowDetails(null)
+        setShowDetails(null);
     }
   }
 

@@ -1,21 +1,42 @@
 .App {
-  text-align: center;
+  margin: auto 15%;
 }
 
 body {
+  text-align: center;
   font-size: 1.25em;
   width: 100%;
   margin: auto;
-  font-family: "Gill Sans", sans-serif;
+  font-family: 'Hack', 'DejaVu Sans', sans-serif;
+}
+
+#header {
+  text-align: center;
+}
+
+#navbar {
+  word-spacing: 2pt;
+}
+
+a { 
+  text-align: center;
+  text-decoration: none;
 }
 
 #aboutme {
-  max-width: 35%;
-  margin: 0 auto;
+  text-align: left;
+}
+
+#project_list {
+  text-align: left;
+}
+
+.show_projects h4 {
+  background-color: gray;
 }
 
 .screenshot {
-  max-width: 30%;
+  max-width: 50%;
   max-height: auto;
   transition: transform .2s;
 }
@@ -24,9 +45,11 @@ body {
   transform: scale(2.0);
 }
 
-#project_list {
-  max-width: 50%;
-  margin: 0 auto;
+#stacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 75px;
 }
 
 #tech_stack {
@@ -44,9 +67,17 @@ body {
   flex-direction: column;
 }
 
-#contact {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+#footer {
+  margin-top: 100px;
 }
+
+#icons {
+  max-width: 20%;
+  margin: 0 auto;
+}
+
+#footer img {
+  width: 20px;
+  margin: 5%;
+}
+

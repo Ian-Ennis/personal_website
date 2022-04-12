@@ -5,12 +5,12 @@ import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import Stack from "./Components/Stack";
 import Interests from "./Components/Interests";
-import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header>
+      <header id="header">
         <h1>Ian Ennis</h1>
         <h3>Fullstack Web Developer</h3>
         <NavBar />
@@ -21,8 +21,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/stack" element={<Stack />} />
           <Route path="/interests" element={<Interests />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </div>
   );
