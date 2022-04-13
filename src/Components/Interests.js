@@ -18,7 +18,7 @@ function Interests() {
   return (
     <div id="interests">
       <div id="inspirations">
-        <h4>Inspirations</h4>
+        <h4></h4>
         {inspiration}
       </div>
     </div>

@@ -10,8 +10,41 @@ body {
   font-family: "Avenir-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
+/* =================================================================== */
+
+.homescreen {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 1000px;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+#home-logo{
+  margin: 25% auto;
+  opacity: 1.0;
+  transition: transform 4s ease;
+  transition-delay: .15s;
+}
+
+#home-logo:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+#home-logo.move{
+  opacity: .01;
+  -webkit-transition: opacity 2s 0s;
+  -o-transition: opacity 2s 0s;
+  transition: opacity 2s 0s;
+}
+
+ /* ====================================================================== */
+
 #header {
-  text-align: center;
+  cursor: pointer;
 }
 
 h1 {
@@ -274,8 +307,8 @@ h1 {
 #inspirations {
   display: flex;
   flex-direction: column;
-	-webkit-animation: jello-horizontal 0.9s both;
-	animation: jello-horizontal 0.9s both;
+	-webkit-animation: jello-horizontal 1.3s both;
+	animation: jello-horizontal 1.3s both;
   animation-delay: .10s;
 }
 
