@@ -24,15 +24,15 @@ function Stack() {
   ];
 
   const techSkill = techSkills.map((s, index) => (
-    <span key={index} className="skill">
+    <p key={index} className="skill">
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {s.skill}
-    </span>
+    </p>
   ));
   const personalSkill = personalSkills.map((s, index) => (
-    <span key={index} className="skill">
+    <p key={index} className="skill">
       {s.skill}
-    </span>
+    </p>
   ));
 
   return (

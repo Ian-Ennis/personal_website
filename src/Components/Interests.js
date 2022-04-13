@@ -13,12 +13,14 @@ function Interests() {
         {insp: "Banff Mountain Film Festival", link: "https://www.banffcentre.ca/banffmountainfestival/tour"},
       ]
 
-      const inspiration = inspirations.map((i, index) => (<span key={index} className="inspos"><a href={i.link}>{i.insp}</a></span>))
+    const inspiration = inspirations.map((i, index) => (<p key={index} className="inspos"><a href={i.link}>{i.insp}</a></p>))
 
   return (
-    <div id="inspirations">
-      <h4>Inspirations</h4>
-      {inspiration}
+    <div id="interests">
+      <div id="inspirations">
+        <h4>Inspirations</h4>
+        {inspiration}
+      </div>
     </div>
   );
 }

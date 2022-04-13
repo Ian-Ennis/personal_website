@@ -16,8 +16,8 @@ function Projects() {
       },
       bullets: [
         "Integrated Redux to store data from API calls and user selections within the Redux Store",
-        "Blended story together with aesthetics and the useSound React hook",
-        "Styled using CSS without frameworks to expand creativity and technical efficiency",
+        "Blended story together with aesthetics and the useSound React hook for enhanced user experience",
+        "Styled using vanilla CSS to expand technical efficiency and creativity",
       ],
     },
     {
@@ -63,8 +63,8 @@ function Projects() {
         front: "https://github.com/Ian-Ennis/star_vault",
       },
       bullets: [
-        "Styled with CSS Flexbox",
-        "Rendered a interactable table according to stored and user-input data",
+          "Rendered a modifiable table reflective of stored server information",
+          "Styled with CSS using Flexbox",
       ],
     },
   ];
