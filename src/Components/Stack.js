@@ -2,13 +2,14 @@ import React from "react";
 
 function Stack() {
   const techSkills = [
-    { skill: "JavaScript" },
-    { skill: "ReactJS" },
-    { skill: "Redux" },
-    { skill: "Ruby" },
-    { skill: "Ruby on Rails" },
-    { skill: "HTML5" },
-    { skill: "CSS" },
+    { id: "skillImg", skill: "JavaScript", icon: "https://imgur.com/DvpgXly.jpeg", alt: "js"},
+    { id: "skillImg", skill: "ReactJS", icon: "https://imgur.com/KzTnCzI.jpeg", alt: "react"},
+    { id: "skillImg", skill: "Redux", icon: "https://imgur.com/1aPso9n.jpeg", alt: "redux"},
+    { id: "skillImg", skill: "Ruby", icon: "https://imgur.com/knqk4e6.jpeg", alt: "ruby" },
+    { id: "skillImg", skill: "Ruby on Rails", icon: "https://imgur.com/pC3M5Jk.jpeg", alt: "rails"},
+    { id: "skillImg", skill: "HTML5", icon: "https://imgur.com/Bp2ov10.jpeg", alt: "html5"},
+    { id: "skillImg", skill: "CSS", icon: "https://imgur.com/ToC6ujR.jpeg", alt: "css"},
+    { id: "skillImg", skill: "SQL", icon: "https://imgur.com/ppLptA3.jpeg", alt: "sql"},
   ];
 
   const personalSkills = [
@@ -24,6 +25,7 @@ function Stack() {
 
   const techSkill = techSkills.map((s, index) => (
     <span key={index} className="skill">
+      <img id={s.id} src={s.icon} alt={s.alt}/>
       {s.skill}
     </span>
   ));

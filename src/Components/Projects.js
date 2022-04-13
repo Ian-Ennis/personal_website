@@ -6,7 +6,7 @@ function Projects() {
     {
       title: "Sigma Shipyards",
       stack: "React/Redux with Ruby on Rails API",
-      image: "https://imgur.com/J0qcb5j.png",
+      image: "https://imgur.com/J0qcb5j.jpeg",
       description:
         "Game-focused spaceship builder with the purpose of guiding users through a journey in sci-fi space retro-futurism",
       links: {
@@ -23,7 +23,7 @@ function Projects() {
     {
       title: "Leg-Up Activity Tracker",
       stack: "React with Ruby on Rails API",
-      image: "https://imgur.com/t5ToHxX.png",
+      image: "https://imgur.com/t5ToHxX.jpeg",
       description:
         "A tool to provide fans of physical activity with the ability to record activity sessions for meditation, yoga, and cardio",
       links: {
@@ -40,7 +40,7 @@ function Projects() {
     {
       title: "Cozy Cat Cafe",
       stack: "React with JSON Server",
-      image: "https://imgur.com/FpF2GY6.png",
+      image: "https://imgur.com/FpF2GY6.jpeg",
       description:
         "A friendly place for people to hangout with cats, browse through a collection of books, and submit cat adoption forms",
       links: {
@@ -56,7 +56,7 @@ function Projects() {
     {
       title: "Starvault",
       stack: "React",
-      image: "https://imgur.com/6BjmDgr.png",
+      image: "https://imgur.com/6BjmDgr.jpeg",
       description:
         "A place for amateur astronomers to upload their interstellar  discoveries",
       links: {

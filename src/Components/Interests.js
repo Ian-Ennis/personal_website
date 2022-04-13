@@ -7,8 +7,8 @@ function Interests() {
         {insp: "Arthur C. Clarke", link: "https://www.clarkefoundation.org/arthur-c-clarke-biography/"},
         {insp: "Bungie", link: "https://www.bungie.net/"},
         {insp: "Ambrosia Software", link: "https://en.wikipedia.org/wiki/Ambrosia_Software"},
-        {insp: "NASA"},
-        {insp: "SpaceX"},
+        {insp: "NASA", link: "https://www.nasa.gov/"},
+        {insp: "SpaceX", link: "https://www.spacex.com/"},
         {insp: "The Planetary Society", link: "https://www.planetary.org/"},
         {insp: "Banff Mountain Film Festival", link: "https://www.banffcentre.ca/banffmountainfestival/tour"},
       ]
