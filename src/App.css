@@ -19,11 +19,11 @@ body {
   height: 1000px;
   padding: 10px;
   margin: 0;
-  width: 100%;
+  width: 95%;
 }
 
 #home-logo{
-  margin: 25% auto;
+  margin: 20% auto;
   opacity: 1.0;
   transition: transform 4s ease;
   transition-delay: .15s;
