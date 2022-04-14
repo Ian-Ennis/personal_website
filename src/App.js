@@ -38,7 +38,7 @@ function App() {
     <div className="App">
       {home ? null : <header>
         <h1 id="header" onClick={handleHeaderClick}>Ian Ennis</h1>
-        <h3>Fullstack Web Developer</h3>
+        <h3>Full-stack Web Developer</h3>
         <NavBar />
       </header>}
       <div className="routes">

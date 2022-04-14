@@ -7,10 +7,8 @@ body {
   font-size: 1.25em;
   width: 100%;
   margin: auto;
-  font-family: "Avenir-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-
-/* =================================================================== */
 
 .homescreen {
   background-repeat: no-repeat;
@@ -41,18 +39,16 @@ body {
   transition: opacity 2s 0s;
 }
 
- /* ====================================================================== */
-
 #header {
   cursor: pointer;
 }
 
 h1 {
-  font-family: 'Garamond', serif
+  font-size: 48pt;
 }
 
-#navbar {
-  word-spacing: 2pt;
+.navbar_link {
+  margin: 8pt;
 }
 
 #navbar a:hover {

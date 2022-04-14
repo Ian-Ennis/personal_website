@@ -4,7 +4,7 @@ function About() {
   return (
     <div id="aboutme">
       <p>
-        Fullstack web developer with a curiosity for the world and the universe.
+        Full-stack Web Developer with a curiosity for the world and the universe.
         Relying on React/Redux, JavaScript, Ruby on Rails, an eye for design,
         and a background in Environmental Science with experience in public
         service.
