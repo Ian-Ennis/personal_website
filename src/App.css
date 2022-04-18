@@ -32,7 +32,7 @@ body {
 }
 
 #entry_logo:hover{
-  transform: scale(1.5);
+  transform: scale(1.23);
   cursor: pointer;
 }
 
@@ -43,12 +43,18 @@ body {
   transition: opacity 2s 0s;
 }
 
+/* used <p> tags rather than headers to improve aesthetic with Avenir font */
 #header {
-  font-family: "Rockwell", "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  font-size: 70pt;
   cursor: pointer;
   position: relative;
-  margin-top: 8%;
-  margin-bottom: -2%;
+  margin-top: 6%;
+  margin-bottom: -1.5%;
+}
+
+#web_developer {
+  font-size: 20pt;
 }
 
 h1 {
@@ -56,11 +62,12 @@ h1 {
 }
 
 #navbar {
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 .navbar_link {
+  font-size: 18pt;
   margin: 8pt;
 }
 
@@ -110,6 +117,10 @@ h1 {
 .shown_project {
   -webkit-animation: view 1 1s linear;
   animation: view 1 1s linear;
+}
+
+li {
+  margin: 5px;
 }
 
 .screenshot {
@@ -330,14 +341,6 @@ h1 {
   transition: transform .2s;
 }
 
-.interestImg:hover {
-  transform: scale(1.5);
-}
-
-#spaceship.img {
-  
-}
-
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -380,10 +383,10 @@ h1 {
 }
 
 #footer {
-  margin-top: 75px;
+  margin-top: 150px;
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 #icons {

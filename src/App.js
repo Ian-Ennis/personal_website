@@ -42,8 +42,8 @@ function App() {
     <div className="App">
       {home ? null : 
       <header>
-        <h1 id="header" onClick={handleHeaderClick}>Ian Ennis</h1>
-        <h3>Full-stack Web Developer</h3>
+        <p id="header" onClick={handleHeaderClick}>Ian Ennis</p>
+        <p id="web_developer">Full-stack Web Developer</p>
         <NavBar changeBackground={changeBackground}/>
       </header>}
       <div className="routes">
