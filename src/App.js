@@ -3,10 +3,10 @@ import { useState} from "react";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import About from "./Components/About";
-import Welcome from "./Components/Welcome";
+import Entry from "./Components/Entry";
 import Projects from "./Components/Projects";
 import Stack from "./Components/Stack";
-import Interests from "./Components/Interests";
+import Interests from "./Components/Inspirations";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -18,11 +18,10 @@ function App() {
     window.location.reload();
   }
 
-  function handleEnterClick(e) {
-    console.log("tree click")
+  const handleEntryClick = (e) => {
 
     if (home) {
-      document.getElementById("home-logo").classList = "move"
+      document.getElementById("entry_logo").classList = "move"
       console.log(e.target.classList)
       setTimeout(()=>{
         setHome(false)
@@ -34,16 +33,22 @@ function App() {
     }
   }
 
+  const changeBackground = () => {
+    console.log('background')
+    // document.body.style.background = "url('https://imgur.com/eksdcAY.jpg') center no-repeat"
+  }
+
   return (
     <div className="App">
-      {home ? null : <header>
+      {home ? null : 
+      <header>
         <h1 id="header" onClick={handleHeaderClick}>Ian Ennis</h1>
         <h3>Full-stack Web Developer</h3>
-        <NavBar />
+        <NavBar changeBackground={changeBackground}/>
       </header>}
       <div className="routes">
         <Routes>
-          <Route path="/" element={<Welcome handleEnterClick={handleEnterClick}/>} />
+          <Route path="/" element={<Entry handleEntryClick={handleEntryClick}/>} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/stack" element={<Stack />} />

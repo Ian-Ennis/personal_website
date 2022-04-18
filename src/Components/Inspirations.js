@@ -1,6 +1,6 @@
 import React from "react";
 
-function Interests() {
+function Inspirations() {
 
     const inspirations = [
         {insp: "Douglas Adams", link: "https://www.tatteredcover.com/book/9780345391803"},
@@ -16,13 +16,10 @@ function Interests() {
     const inspiration = inspirations.map((i, index) => (<p key={index} className="inspos"><a href={i.link}>{i.insp}</a></p>))
 
   return (
-    <div id="interests">
       <div id="inspirations">
-        <h4></h4>
         {inspiration}
       </div>
-    </div>
   );
 }
 
-export default Interests;
+export default Inspirations;

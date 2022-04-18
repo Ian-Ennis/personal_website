@@ -10,29 +10,33 @@ body {
   font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.homescreen {
+.entry_screen {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   height: 600px;
   padding: 10px;
-  margin: 0;
+  margin: 0 auto;
   width: 95%;
+  margin-top: 10%;
 }
 
-#home-logo{
-  margin: 15% auto;
+#entry_logo{
+  width: 50%;
+  height: auto;
+  margin: 0% auto;
   opacity: 1.0;
+  border-radius: 25px;
   transition: transform 4s ease;
   transition-delay: .15s;
 }
 
-#home-logo:hover{
+#entry_logo:hover{
   transform: scale(1.5);
   cursor: pointer;
 }
 
-#home-logo.move{
+#entry_logo.move{
   opacity: .01;
   -webkit-transition: opacity 2s 0s;
   -o-transition: opacity 2s 0s;
@@ -40,11 +44,20 @@ body {
 }
 
 #header {
+  font-family: "Rockwell", "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
   cursor: pointer;
+  position: relative;
+  margin-top: 8%;
+  margin-bottom: -2%;
 }
 
 h1 {
   font-size: 48pt;
+}
+
+#navbar {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .navbar_link {
@@ -321,6 +334,10 @@ h1 {
   transform: scale(1.5);
 }
 
+#spaceship.img {
+  
+}
+
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -346,8 +363,24 @@ h1 {
   }
 }
 
+#backlink {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  height: 10px;
+  width: 108px;
+  -webkit-animation: hide 1 1.5s linear;
+  animation: hide 1 1.5s linear;
+}
+
+#welcome_link {
+  font-size: 8pt;
+  color: rgb(147, 147, 147);
+  text-decoration: none;
+}
+
 #footer {
-  margin-top: 100px;
+  margin-top: 75px;
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 1.5s;
@@ -357,7 +390,6 @@ h1 {
   max-width: 20%;
   margin: 0 auto;
 }
-
 
 #footer img {
   width: 20px;
