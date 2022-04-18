@@ -33,18 +33,13 @@ function App() {
     }
   }
 
-  const changeBackground = () => {
-    console.log('background')
-    // document.body.style.background = "url('https://imgur.com/eksdcAY.jpg') center no-repeat"
-  }
-
   return (
     <div className="App">
       {home ? null : 
       <header>
         <p id="header" onClick={handleHeaderClick}>Ian Ennis</p>
         <p id="web_developer">Full-stack Web Developer</p>
-        <NavBar changeBackground={changeBackground}/>
+        <NavBar />
       </header>}
       <div className="routes">
         <Routes>
