@@ -1,5 +1,7 @@
 .App {
-  margin: auto 20%;
+  margin: auto 25%;
+  min-width: 750px;
+  max-width: 1200px;
 }
 
 body {
@@ -14,17 +16,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  height: 600px;
+  height: 50%;
   padding: 10px;
   margin: 0 auto;
   width: 95%;
-  margin-top: 10%;
+  margin-top: 12%;
 }
 
 #entry_logo{
-  width: 50%;
-  height: auto;
-  margin: 0% auto;
+  width: 60%;
+  margin: 0 auto;
   opacity: 1.0;
   border-radius: 25px;
   transition: transform 4s ease;
@@ -89,9 +90,29 @@ h1 {
   }
  }
 
+#profile_photo {
+  width: 200px;
+}
+
+#photo {
+  width: 200px;
+  margin-top: 10%;
+}
+
 #aboutme {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 20px;
   -webkit-animation: view 1 1.5s linear;
   animation: view 1 1.5s linear;
+}
+
+#aboutme p {
+  text-align: justify;
+}
+
+#checkout_work {
+  text-align: center;
 }
 
 #project_list {
@@ -387,7 +408,7 @@ li {
 }
 
 #footer {
-  margin-top: 150px;
+  margin-top: 20%;
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 1s;
@@ -399,7 +420,7 @@ li {
 }
 
 #footer img {
-  width: 20px;
+  max-width: 20px;
   margin: 5%;
 }
 
