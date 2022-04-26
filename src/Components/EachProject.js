@@ -10,10 +10,10 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
       <h4 id={project.title} className="proj_stack" onClick={handleProjectClick}>
         {project.title}
       </h4>
-      <p id="proj_stack">{project.stack} project</p>
+      <p id="proj_stack"><b>{project.stack}</b></p>
       {selectedProject === project.title ? (
         <div className="shown_project">
-          <p>{project.description}</p>
+          <p id="proj_descr">{project.description}</p>
           <ul id="project_list">{bulletPoints}</ul>
           <img
             className="screenshot"

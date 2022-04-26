@@ -11,7 +11,7 @@ function About() {
         <div id="about">
           <p>
             Full-stack Web Developer with a curiosity for the world and the
-            universe. Fluent in JavaScript, React/Redux, HTML, CSS, and Ruby on
+            universe. Skills in JavaScript, React/Redux, HTML, CSS, and Ruby on
             Rails, with an eye for design, a background in Environmental Science
             and experience in public service.
           </p>
