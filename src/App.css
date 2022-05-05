@@ -92,8 +92,8 @@ body {
 #photo {
   width: 200px;
   margin-top: 10%;
-  -webkit-animation: view 1 1s linear;
-  animation: view 1 1s linear;
+  -webkit-animation: view 1 .75s linear;
+  animation: view 1 .75s linear;
 }
 
 #aboutme {
