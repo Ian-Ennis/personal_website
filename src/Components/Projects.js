@@ -4,8 +4,24 @@ import EachProject from "./EachProject";
 function Projects() {
   const projectData = [
     {
+      title: "Evocation Station",
+      stack: "React front end with Ruby on Rails API and AWS file storage",
+      image: "https://imgur.com/XXDgnSp.jpeg",
+      description:
+        "Where users can create and customize evocative, meaningful collections of images, sounds, and writings",
+      links: {
+        front: "https://github.com/Ian-Ennis/evocation_station",
+        demo: "https://www.loom.com/share/874b8157ebd84b1581e79de22f53a5e0",
+      },
+      bullets: [
+        "Implemented user authentication through session information storage within client-side cookies for user login",
+        "Parsed HTML from TinyMCE rich text editor to render submitted user text with custom formatting retained",
+        "Configured AWS S3 bucket to store and retrieve image and audio files for improved performance and data reliability",
+      ],
+    },
+    {
       title: "Sigma Shipyards",
-      stack: "React/Redux with Ruby on Rails API",
+      stack: "React/Redux front end with Ruby on Rails API",
       image: "https://imgur.com/WSzd8JR.jpeg",
       description:
         "Game-focused spaceship builder with the purpose of guiding users through a journey in sci-fi space retro-futurism",
@@ -15,14 +31,14 @@ function Projects() {
         demo: "https://www.loom.com/share/62db37678aa34f64b19803c9bded9964",
       },
       bullets: [
-        "Integrated Redux to store data from API calls and user selections within the Redux Store",
-        "Blended story together with aesthetics and the useSound React hook for enhanced user experience",
-        "Styled using vanilla CSS to expand technical efficiency and creativity",
+        "Dispatched actions to reducer functions with Redux Toolkit to store frequently-updated, widely-used application state",
+        "Incorporated common UI design principles into vanilla CSS to create a consistent, visually-appealing user interface",
+        "Mapped URL resources to corresponding controller actions in a Ruby on Rails RESTful API",
       ],
     },
     {
       title: "Leg-Up Activity Tracker",
-      stack: "React with Ruby on Rails API",
+      stack: "React front end with Ruby on Rails API",
       image: "https://imgur.com/t5ToHxX.jpeg",
       description:
         "A tool to provide fans of physical activity with the ability to record activity sessions for meditation, yoga, and cardio",
@@ -32,25 +48,9 @@ function Projects() {
         demo: "https://www.loom.com/share/eb54a2c52f2b426290279dc88aeb3f0d",
       },
       bullets: [
-        "Implemented user authentication using JSON Web Tokens",
-        "Incorporated Chart.js into ReactJS to render bar charts allowing the user to see a visual history of their activities",
-        "Integrated the Bootstrap framework to style buttons and font for added visual appeal",
-      ],
-    },
-    {
-      title: "Cozy Cat Cafe",
-      stack: "React with JSON Server",
-      image: "https://imgur.com/FpF2GY6.jpeg",
-      description:
-        "A friendly place for people to hangout with cats, browse through a collection of books, and submit cat adoption forms",
-      links: {
-        front: "https://github.com/Ian-Ennis/phase_2_project_cozy_cat_cafe",
-        demo: "https://www.loom.com/share/9855a25f7ec34a78be54bb680db0ed98",
-      },
-      bullets: [
-        "Utilized ReactJS with BrowserRouter to enable client-side routing",
-        "Created a searchable book library with clickable book synopsis cards",
-        "Enabled user submissions of animal adoption form data to persist",
+        "Utilized client-side routing with React Router for programmatic navigation and conditional component rendering",
+        "Passed user input data into open-source HTML5 charts (Chart.js) to render visual records reflecting server-side data",
+        "Integrated lightweight, responsive, open-source stylesheets to style raw HTML elements within the user interface",
       ],
     },
     {
