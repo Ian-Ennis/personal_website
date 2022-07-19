@@ -21,7 +21,8 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
             alt="project_screenshot"
           />
           <br/>
-          <a href={project.links.front}>GitHub Frontend</a>
+          {project.links.url ? <a href={project.links.url}>Webpage</a> : null}
+          <a href={project.links.front}> | GitHub Frontend</a>
           {project.links.back ? (
             <a href={project.links.back}> | GitHub Backend </a>
           ) : null}
