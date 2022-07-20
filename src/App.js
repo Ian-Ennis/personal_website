@@ -19,7 +19,6 @@ function App() {
   }
 
   const handleEntryClick = (e) => {
-
     if (home) {
       document.getElementById("entry_logo").classList = "move"
       console.log(e.target.classList)

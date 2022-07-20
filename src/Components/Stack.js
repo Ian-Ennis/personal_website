@@ -39,11 +39,11 @@ function Stack() {
   return (
     <div id="stacks">
       <div id="tech_stack">
-        <h4>Tech Stack</h4>
+        <h4 className="stack_label">Tech Stack</h4>
         {techSkill}
       </div>
       <div id="personal_stack">
-        <h4>Personal Stack</h4>
+        <h4 className="stack_label">Personal Stack</h4>
         {personalSkill}
       </div>
     </div>

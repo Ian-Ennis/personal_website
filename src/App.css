@@ -1,3 +1,11 @@
+body {
+  text-align: center;
+  font-size: 1em;
+  width: 90%;
+  margin: 0% 0% 0% 3%;
+  font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 .App {
   margin: auto 25%;
   min-width: 750px;
@@ -10,14 +18,6 @@
     min-width: 320px;
     max-width: 480px;
   }
-}
-
-body {
-  text-align: center;
-  font-size: 1em;
-  width: 100%;
-  margin: auto;
-  font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .entry_screen {
@@ -64,7 +64,6 @@ body {
   transition: opacity 2s 0s;
 }
 
-/* used <p> tags rather than headers to improve aesthetic with Avenir font */
 #header {
   font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
   font-size: 56pt;
@@ -84,7 +83,7 @@ body {
 }
 
 .navbar_link {
-  font-size: 14pt;
+  font-size: 13pt;
   margin: 8pt;
 }
 
@@ -234,10 +233,11 @@ li {
     opacity: 1;
   }
 }
+
 @keyframes bounce-top {
   0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     opacity: 1;
@@ -246,26 +246,26 @@ li {
     opacity: 1;
   }
   40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
+    -webkit-transform: translateY(-16px);
+            transform: translateY(-16px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
   65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
   82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
   93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
@@ -313,6 +313,10 @@ li {
   justify-content: left;
 }
 
+.stack_label {
+  margin-bottom: 5%;
+}
+
 #personal_stack p, #tech_stack p {
   text-align: left;
   margin: 4px;
@@ -348,6 +352,7 @@ li {
             transform: scale3d(1, 1, 1);
   }
 }
+
 @keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -382,7 +387,7 @@ li {
 #inspirations {
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: 4%;
 	-webkit-animation: jello-horizontal 1.3s both;
 	animation: jello-horizontal 1.3s both;
   animation-delay: .10s;
@@ -409,6 +414,7 @@ li {
     opacity: 1;
   }
 }
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -458,4 +464,3 @@ li {
   max-width: 20px;
   margin: 5%;
 }
-

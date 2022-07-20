@@ -1,6 +1,7 @@
 import React from "react";
 
 function EachProject({ project, handleProjectClick, selectedProject }) {
+  
   const bulletPoints = project.bullets.map((b, index) => (
     <li key={index}>{b}</li>
   ));

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EachProject from "./EachProject";
 
 function Projects() {
+  
   const projectData = [
     {
       title: "Evocation Station",
