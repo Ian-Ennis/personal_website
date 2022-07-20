@@ -4,7 +4,7 @@
   max-width: 1200px;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .App {
     margin: auto 10%;
     min-width: 320px;
@@ -29,6 +29,19 @@ body {
   margin: 0 auto;
   width: 95%;
   margin-top: 12%;
+}
+
+@media (max-width: 480px) {
+  .entry_screen {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%;
+    margin-top: 25%;
+  }
 }
 
 #entry_logo {
@@ -99,7 +112,7 @@ body {
 }
 
 #photo {
-  width: 100%;
+  width: 200px;
   margin-top: 10%;
   -webkit-animation: view 1 .25s linear;
   animation: view 1 .25s linear;
@@ -117,7 +130,7 @@ body {
   text-align: justify;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   #aboutme {
     display: flex;
     flex-direction: column;
@@ -278,6 +291,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 2%;
   gap: 75px;
   -webkit-animation: bounce-top 0.9s both;
   animation: bounce-top 0.9s both;
@@ -368,6 +382,7 @@ li {
 #inspirations {
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 	-webkit-animation: jello-horizontal 1.3s both;
 	animation: jello-horizontal 1.3s both;
   animation-delay: .10s;
@@ -420,7 +435,7 @@ li {
   animation-delay: .25s;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   #footer {
     margin-top: 12%;
     margin-bottom: 5%;
@@ -432,7 +447,7 @@ li {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   #icons {
     max-width: 50%;
     margin: 0 auto;
