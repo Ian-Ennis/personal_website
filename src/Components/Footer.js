@@ -11,9 +11,6 @@ function Footer() {
           </div>
           <a href="mailto:ipatrickenn7@gmail.com">ipatrickenn7@gmail.com</a>
       </div>
-      <div id="backlink">
-        <a id="welcome_link" href="https://all-free-download.com">all-free-download.com</a>
-      </div>
     </>
   );
 }

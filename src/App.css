@@ -4,6 +4,14 @@
   max-width: 1200px;
 }
 
+@media screen and (max-width: 480px) {
+  .App {
+    margin: auto 10%;
+    min-width: 320px;
+    max-width: 480px;
+  }
+}
+
 body {
   text-align: center;
   font-size: 1em;
@@ -23,7 +31,7 @@ body {
   margin-top: 12%;
 }
 
-#entry_logo{
+#entry_logo {
   width: 60%;
   margin: 0 auto;
   opacity: 1.0;
@@ -31,12 +39,12 @@ body {
   transition: transform 4s ease;
 }
 
-#entry_logo:hover{
+#entry_logo:hover {
   transform: scale(1.23);
   cursor: pointer;
 }
 
-#entry_logo.move{
+#entry_logo.move {
   opacity: .01;
   -webkit-transition: opacity 2s 0s;
   -o-transition: opacity 2s 0s;
@@ -85,12 +93,13 @@ body {
   }
  }
 
-#profile_photo {
+#photo_container {
   width: 200px;
+  margin: 0 auto;
 }
 
 #photo {
-  width: 200px;
+  width: 100%;
   margin-top: 10%;
   -webkit-animation: view 1 .25s linear;
   animation: view 1 .25s linear;
@@ -106,6 +115,15 @@ body {
 
 #aboutme p {
   text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  #aboutme {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: view 1 1s linear;
+    animation: view 1 1s linear;
+  }
 }
 
 #checkout_work {
@@ -389,16 +407,6 @@ li {
   }
 }
 
-#backlink {
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
-  height: 10px;
-  width: 108px;
-  -webkit-animation: hide 1 1.5s linear;
-  animation: hide 1 1.5s linear;
-}
-
 #welcome_link {
   font-size: 8pt;
   color: rgb(147, 147, 147);
@@ -412,9 +420,23 @@ li {
   animation-delay: .25s;
 }
 
+@media screen and (max-width: 480px) {
+  #footer {
+    margin-top: 12%;
+    margin-bottom: 5%;
+  } 
+}
+
 #icons {
   max-width: 20%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  #icons {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
 
 #footer img {
