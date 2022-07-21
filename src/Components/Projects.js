@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import EachProject from "./EachProject";
 
 function Projects() {
-  
+
   const projectData = [
     {
       title: "Evocation Station",
@@ -13,6 +13,7 @@ function Projects() {
       links: {
         url: "https://evocation-station.herokuapp.com/",
         front: "https://github.com/Ian-Ennis/evocation_station",
+        back: "https://github.com/Ian-Ennis/evocation_station_rails_API",
         demo: "https://www.loom.com/share/874b8157ebd84b1581e79de22f53a5e0",
       },
       bullets: [
@@ -92,7 +93,9 @@ function Projects() {
     />
   ));
 
-  return <div className="project_descriptions">{project}</div>;
+  return (
+  <>{project}</>
+  )
 }
 
 export default Projects;

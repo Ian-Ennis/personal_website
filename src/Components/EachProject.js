@@ -22,10 +22,10 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
             alt="project_screenshot"
           />
           <br/>
-          {project.links.url ? <a href={project.links.url}>Webpage</a> : null}
-          <a href={project.links.front}> | GitHub Frontend</a>
+          {project.links.url ? <a href={project.links.url}>Webpage | </a> : null}
+          <a href={project.links.front}>GitHub front end</a>
           {project.links.back ? (
-            <a href={project.links.back}> | GitHub Backend </a>
+            <a href={project.links.back}> | GitHub back end </a>
           ) : null}
           {project.links.demo ? <a href={project.links.demo}> | Demo</a> : null}
         </div>

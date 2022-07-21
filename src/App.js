@@ -18,10 +18,9 @@ function App() {
     window.location.reload();
   }
 
-  const handleEntryClick = (e) => {
+  const handleEntryClick = () => {
     if (home) {
       document.getElementById("entry_logo").classList = "move"
-      console.log(e.target.classList)
       setTimeout(()=>{
         setHome(false)
         navigate('/about')
@@ -37,7 +36,7 @@ function App() {
       {home ? null : 
       <header>
         <p id="header" onClick={handleHeaderClick}>Ian Ennis</p>
-        <p id="web_developer">Full-stack Web Developer</p>
+        <p id="web_developer">Front End Web Developer</p>
         <NavBar />
       </header>}
       <div className="routes">
@@ -46,10 +45,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/stack" element={<Stack />} />
-          <Route path="/interests" element={<Interests />} />
+          <Route path="/inspirations" element={<Interests />} />
         </Routes>
-        <Footer />
       </div>
+        <Footer />
     </div>
   );
 }

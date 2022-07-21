@@ -2,14 +2,16 @@ import React from "react";
 
 function Stack() {
   const techSkills = [
-    { id: "skillImg", skill: "JavaScript", icon: "https://imgur.com/DvpgXly.jpeg", alt: "js"},
     { id: "skillImg", skill: "ReactJS", icon: "https://imgur.com/KzTnCzI.jpeg", alt: "react"},
+    { id: "skillImg", skill: "JavaScript", icon: "https://imgur.com/DvpgXly.jpeg", alt: "js"},
+    { id: "skillImg", skill: "HTML5", icon: "https://imgur.com/Bp2ov10.jpeg", alt: "html5"},
+    { id: "skillImg", skill: "CSS", icon: "https://imgur.com/ToC6ujR.jpeg", alt: "css"},
     { id: "skillImg", skill: "Redux", icon: "https://imgur.com/1aPso9n.jpeg", alt: "redux"},
+    { id: "skillImg", skill: "Next.js", icon: "https://imgur.com/fMy4haL.jpeg", alt: "next.js"},
+    { id: "skillImg", skill: "GraphQL", icon: "https://imgur.com/aTbXxJF.jpeg", alt: "graphql"},
     { id: "skillImg", skill: "Ruby", icon: "https://imgur.com/knqk4e6.jpeg", alt: "ruby" },
     { id: "skillImg", skill: "Ruby on Rails", icon: "https://imgur.com/pC3M5Jk.jpeg", alt: "rails"},
     { id: "skillImg", skill: "AWS S3", icon: "https://imgur.com/YQHKAnG.jpeg", alt: "aws_s3"},
-    { id: "skillImg", skill: "HTML5", icon: "https://imgur.com/Bp2ov10.jpeg", alt: "html5"},
-    { id: "skillImg", skill: "CSS", icon: "https://imgur.com/ToC6ujR.jpeg", alt: "css"},
     { id: "skillImg", skill: "SQL", icon: "https://imgur.com/ppLptA3.jpeg", alt: "sql"},
   ];
 

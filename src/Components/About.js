@@ -3,32 +3,33 @@ import IanEnnis from "../ProfilePhoto/IanEnnis.jpeg";
 
 function About() {
   return (
-    <>
-      <div id="aboutme">
-        <div id="photo_container">
-          <img id="photo" src={IanEnnis} alt="picture_of_ian" />
-        </div>
-        <div id="about">
-          <p>
-            Full-stack Web Developer with a curiosity for the world and the
-            universe. Skills in JavaScript, React/Redux, HTML, CSS, and Ruby on
-            Rails, with an eye for design, a background in Environmental Science
-            and experience in public service.
-          </p>
-          <p>
-            I have worked with both the National Park and U.S. Fish and Wildlife
-            services, as well as local parks departments, contributing to the
-            health of the natural environment through horticulture.
-          </p>
-          <p>
-            I am now expanding the ways I can give back to the world by
-            exploring the confluence of programming, user experience, and
-            positive intentions. I intend to continue helping people and planet
-            alike. Come check out my work.
-          </p>
-        </div>
+    <div id="about_me">
+      <div id="photo_container">
+        <img id="photo" src={IanEnnis} alt="picture_of_ian" />
       </div>
-    </>
+      <div>
+        <p>
+          Welcome. I am front end web developer with a specialty in ReactJS,
+          alongside strong and knowledgable skills in JavaScript, HTML and Vanilla CSS.
+          Additional skills may be viewed under Stack(s).
+        </p>
+        <p>
+          I come from a design background. I once designed and enhanced
+          aesthetics of outdoor spaces in both rural and urban parks for the
+          benefit of the general public. What once was a pallet within garden
+          design, has become a pallet of front end design. I learn new languages
+          and frameworks quickly, and have five years experience collaborating
+          with committed teams of people who are similarly driven to create
+          quality products for the benefit of helping others.
+        </p>
+        <p>
+          I thoroughly enjoy exploring the confluence of programming, user
+          experience, and positive intentions. Through creating intuitive,
+          memorable user interfaces, I can continue to give back to society by
+          improving user experiences. Come check out my work.
+        </p>
+      </div>
+    </div>
   );
 }
 
