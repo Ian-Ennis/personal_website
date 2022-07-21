@@ -9,7 +9,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    padding: 20px;
+    padding: 40px;
   }
 }
 
@@ -128,7 +128,7 @@ body {
 @media (max-width: 768px) {
   #about_me {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-animation: view 1 1s linear;
     animation: view 1 1s linear;
   }
@@ -442,12 +442,21 @@ li {
   animation-delay: .25s;
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 768px) {
   #footer {
-    margin-top: 12%;
-    margin-bottom: 5%;
+    margin: 0 auto;
+    top: 85%;
+    left: 39%;
   } 
-} */
+}
+
+@media (max-width: 480px) {
+  #footer {
+    margin: 0 auto;
+    top: 85%;
+    left: 39%;
+  } 
+}
 
 #icons {
   display: flex;
