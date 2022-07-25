@@ -39,7 +39,7 @@ function App() {
         <p id="web_developer">Front End Web Developer</p>
         <NavBar />
       </header>}
-      <div className="routes">
+      {/* <div className="routes"> */}
         <Routes>
           <Route path="/" element={<Entry handleEntryClick={handleEntryClick}/>} />
           <Route path="/about" element={<About />} />
@@ -47,7 +47,7 @@ function App() {
           <Route path="/stack" element={<Stack />} />
           <Route path="/inspirations" element={<Interests />} />
         </Routes>
-      </div>
+      {/* </div> */}
         <Footer />
     </div>
   );

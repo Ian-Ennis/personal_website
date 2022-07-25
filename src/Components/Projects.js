@@ -94,7 +94,7 @@ function Projects() {
   ));
 
   return (
-  <>{project}</>
+  <div id="projects">{project}</div>
   )
 }
 
