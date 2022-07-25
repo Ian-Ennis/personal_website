@@ -10,8 +10,8 @@ function About() {
       <div>
         <p>
           Welcome. I am front end web developer with a specialty in ReactJS,
-          alongside strong and knowledgable skills in JavaScript, HTML and Vanilla CSS.
-          Additional skills may be viewed under Stack(s).
+          alongside strong and knowledgable skills in JavaScript, HTML and
+          Vanilla CSS. Additional skills may be viewed under Stack(s).
         </p>
         <p>
           I come from a design background. I once designed and enhanced
@@ -25,8 +25,8 @@ function About() {
         <p>
           I thoroughly enjoy exploring the confluence of programming, user
           experience, and positive intentions. Through creating intuitive,
-          memorable user interfaces, I can continue to give back to society by
-          improving user experiences. Come check out my work.
+          memorable user interfaces, I can continue to give back to my users.
+          Come check out my work.
         </p>
       </div>
     </div>

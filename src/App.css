@@ -24,23 +24,14 @@ body {
   width: 90%;
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 768px) {
   .entry_screen {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    height: 50%;
-    padding: 10px;
-    margin: 0 auto;
-    width: 95%;
-    margin-top: 25%;
+    margin-bottom: 100px;
   }
-} */
+}
 
 #entry_logo {
   width: 70%;
-  /* opacity: 1.0; */
-  /* border-radius: 25px; */
   transition: transform 3s ease;
 }
 
@@ -96,11 +87,6 @@ body {
     opacity: 1.0;
   }
  }
-/* 
-.routes {
-  height: 500px;
-  margin-bottom: -30%;
-} */
 
 #about_me {
   height: 350px;
@@ -109,6 +95,12 @@ body {
   -webkit-animation: view 1 1s linear;
   animation: view 1 1s linear;
 } 
+
+@media (max-width: 768px) {
+  #about_me {
+    margin-bottom: 55.5px;
+  }
+}
 
 #photo_container {
   margin: 0 auto;
@@ -140,7 +132,14 @@ body {
 }
 
 #projects {
-  height: 336.5px;
+  margin-bottom: 35.5px;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    height: auto;
+    margin-bottom: 93.5px;
+  }
 }
 
 #project_list {
@@ -294,11 +293,16 @@ li {
   flex-direction: row;
   justify-content: center;
   margin-top: 2%;
-  /* margin-bottom: -10%; */
   gap: 75px;
   -webkit-animation: bounce-top 0.9s both;
   animation: bounce-top 0.9s both;
   animation-delay: .15s;
+}
+
+@media (max-width: 768px) {
+  #stacks {
+    margin-bottom: 56.5px;
+  }
 }
 
 #tech_stack {
@@ -396,6 +400,12 @@ li {
 	-webkit-animation: jello-horizontal 1.3s both;
 	animation: jello-horizontal 1.3s both;
   animation-delay: .10s;
+}
+
+@media (max-width: 768px) {
+  #inspirations {
+    margin-bottom: 26.5px;
+  }
 }
 
 #inspirations p {
