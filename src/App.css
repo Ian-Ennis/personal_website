@@ -18,7 +18,9 @@ body {
   background-position: center;
   background-size: 100% 100%;
   padding: 10px;
-  margin: 15% auto 0% auto;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: -33.5px;
   width: 90%;
 }
 
