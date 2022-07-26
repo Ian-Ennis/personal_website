@@ -15,8 +15,8 @@ body {
 
 @media (max-width: 360px) {
   body {
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 0px;
+    max-width: 250px;
     padding: 0px;
   }
 }
@@ -454,7 +454,7 @@ li {
 @media (max-width: 360px) {
   #footer {
     /* margin-top: 0%; */
-    
+
   }
 }
 
