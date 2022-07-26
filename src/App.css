@@ -17,6 +17,7 @@ body {
   body {
     min-width: 0px;
     max-width: 300px;
+    height: auto;
     padding: 10px;
   }
 }
@@ -151,8 +152,13 @@ body {
 
 @media (max-width: 768px) {
   #projects {
-    height: auto;
     margin-bottom: 93.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  #projects {
+    margin-bottom: -360px;
   }
 }
 
@@ -319,6 +325,12 @@ li {
   }
 }
 
+@media (max-width: 360px) {
+  #stacks {
+    margin-bottom: -330px;
+  }
+}
+
 #tech_stack {
   display: flex;
   flex-direction: column;
@@ -422,6 +434,12 @@ li {
   }
 }
 
+@media (max-width: 360px) {
+  #inspirations {
+    margin-bottom: -352px;
+  }
+}
+
 #inspirations p {
   margin: 4px;
 }
@@ -453,8 +471,8 @@ li {
 
 @media (max-width: 360px) {
   #footer {
-    /* margin-top: 0%; */
-
+    position: relative;
+    margin-top: 150%;
   }
 }
 
@@ -466,13 +484,6 @@ li {
   max-width: 20%;
   margin: 0 auto;
 }
-
-/* @media (max-width: 480px) {
-  #icons {
-    max-width: 50%;
-    margin: 0 auto;
-  }
-} */
 
 #footer img {
   max-width: 20px;
