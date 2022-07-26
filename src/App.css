@@ -16,7 +16,7 @@ body {
 @media (max-width: 360px) {
   body {
     min-width: 0px;
-    max-width: 360px;
+    max-width: 300px;
     padding: 10px;
   }
 }
