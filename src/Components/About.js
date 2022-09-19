@@ -1,11 +1,10 @@
 import React from "react";
-import IanEnnis from "../ProfilePhoto/IanEnnis.jpeg";
 
 function About() {
   return (
     <div id="about_me">
       <div id="photo_container">
-        <img id="photo" src={IanEnnis} alt="picture_of_ian" />
+        <img id="photo" src="https://imgur.com/gm0R5OY.png" alt="picture_of_ian" />
       </div>
       <div>
         <p>
