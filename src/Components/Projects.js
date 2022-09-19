@@ -5,6 +5,23 @@ function Projects() {
 
   const projectData = [
     {
+      title: "Flight Horizons",
+      stack: "React frontend with Jest, React Testing Library (RTL) and AWS Amplify",
+      image: "https://imgur.com/i12xXeD.jpeg",
+      description:
+        "Spaceflight launch tracker with launch vehicles, dates, sites, and mission information for spaceflight enthusiasts",
+      links: {
+        url: "https://flight-horizons.d24la999gwql7c.amplifyapp.com/",
+        front: "https://github.com/Ian-Ennis/flight_horizons",
+      },
+      bullets: [
+        "Ensured correct UI render using inline snapshot tests from React Testing Library",
+        "Mocked fetch requests using Jest to eliminate API calls during testing",
+        "Rendered CSS animations on initial page load using session storage; tested timeout functionality using Jest fake timers",
+        "Deployed to AWS Amplify Studio using a Continuous Integration and Continuous Delivery (CI/CD) pipeline",
+      ],
+    },
+    {
       title: "Evocation Station",
       stack: "React front end with Ruby on Rails API and AWS file storage",
       image: "https://imgur.com/XXDgnSp.jpeg",

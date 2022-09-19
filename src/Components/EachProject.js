@@ -1,17 +1,22 @@
 import React from "react";
 
 function EachProject({ project, handleProjectClick, selectedProject }) {
-  
   const bulletPoints = project.bullets.map((b, index) => (
     <li key={index}>{b}</li>
   ));
 
   return (
     <div className="show_projects">
-      <h4 id={project.title} className="proj_stack" onClick={handleProjectClick}>
+      <h4
+        id={project.title}
+        className="proj_stack"
+        onClick={handleProjectClick}
+      >
         {project.title}
       </h4>
-      <p id="proj_stack"><b>{project.stack}</b></p>
+      <p id="proj_stack">
+        <b>{project.stack}</b>
+      </p>
       {selectedProject === project.title ? (
         <div className="shown_project">
           <p id="proj_descr">{project.description}</p>
@@ -21,11 +26,13 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
             src={project.image}
             alt="project_screenshot"
           />
-          <br/>
-          {project.links.url ? <a href={project.links.url}>Webpage | </a> : null}
-          <a href={project.links.front}>GitHub front end</a>
+          <div className="filler_container"></div>
+          {project.links.url ? (
+            <a href={project.links.url}>Webpage | </a>
+          ) : null}
+          <a href={project.links.front}>GitHub Front End</a>
           {project.links.back ? (
-            <a href={project.links.back}> | GitHub back end </a>
+            <a href={project.links.back}> | GitHub Back End </a>
           ) : null}
           {project.links.demo ? <a href={project.links.demo}> | Demo</a> : null}
         </div>
