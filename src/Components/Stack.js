@@ -3,10 +3,12 @@ import React from "react";
 function Stack() {
   const techSkills = [
     { id: "skillImg", skill: "ReactJS", icon: "https://imgur.com/KzTnCzI.jpeg", alt: "react"},
+    { id: "skillImg", skill: "React Testing Library", icon: "https://imgur.com/SUwsE5Q.jpeg", alt: "rtl"},
+    { id: "skillImg", skill: "Jest", icon: "https://imgur.com/a0YQV3A.jpeg", alt: "jest"},
+    { id: "skillImg", skill: "Redux", icon: "https://imgur.com/1aPso9n.jpeg", alt: "redux"},
     { id: "skillImg", skill: "JavaScript", icon: "https://imgur.com/DvpgXly.jpeg", alt: "js"},
     { id: "skillImg", skill: "HTML5", icon: "https://imgur.com/Bp2ov10.jpeg", alt: "html5"},
     { id: "skillImg", skill: "CSS", icon: "https://imgur.com/ToC6ujR.jpeg", alt: "css"},
-    { id: "skillImg", skill: "Redux", icon: "https://imgur.com/1aPso9n.jpeg", alt: "redux"},
     { id: "skillImg", skill: "Next.js", icon: "https://imgur.com/fMy4haL.jpeg", alt: "next.js"},
     { id: "skillImg", skill: "GraphQL", icon: "https://imgur.com/aTbXxJF.jpeg", alt: "graphql"},
     { id: "skillImg", skill: "Ruby", icon: "https://imgur.com/knqk4e6.jpeg", alt: "ruby" },
@@ -16,14 +18,15 @@ function Stack() {
   ];
 
   const personalSkills = [
-    { skill: "Active listening" },
     { skill: "Problem solving" },
-    { skill: "Collaborating" },
-    { skill: "Empathy" },
-    { skill: "Integrity" },
+    { skill: "Collaboration" },
+    { skill: "Active listening" },
+    { skill: "Commitment" },
     { skill: "Accountability" },
     { skill: "Adaptability" },
+    { skill: "Empathy" },
     { skill: "Organization" },
+    { skill: "Integrity" },
   ];
 
   const techSkill = techSkills.map((s, index) => (
