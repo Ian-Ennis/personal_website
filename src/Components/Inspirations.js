@@ -13,7 +13,7 @@ function Inspirations() {
     {insp: "The Planetary Society", link: "https://www.planetary.org/"},
     ]
 
-  const inspiration = inspirations.map((i, index) => (<p key={index} className="inspos"><a href={i.link}>{i.insp}</a></p>))
+  const inspiration = inspirations.map((i, index) => (<p key={index} className="inspos"><a href={i.link} target="_blank">{i.insp}</a></p>))
 
   return (
     <div id="inspirations">

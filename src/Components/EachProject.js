@@ -28,13 +28,13 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
           />
           <div className="filler_container"></div>
           {project.links.url ? (
-            <a href={project.links.url}>Webpage | </a>
+            <a href={project.links.url} target="_blank">Webpage | </a>
           ) : null}
-          <a href={project.links.front}>GitHub Front End</a>
+          <a href={project.links.front} target="_blank">GitHub Front End</a>
           {project.links.back ? (
-            <a href={project.links.back}> | GitHub Back End </a>
+            <a href={project.links.back} target="_blank"> | GitHub Back End </a>
           ) : null}
-          {project.links.demo ? <a href={project.links.demo}> | Demo</a> : null}
+          {project.links.demo ? <a href={project.links.demo} target="_blank"> | Demo</a> : null}
         </div>
       ) : null}
     </div>
