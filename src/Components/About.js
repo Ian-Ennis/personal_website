@@ -4,14 +4,18 @@ function About() {
   return (
     <div id="about_me">
       <div id="photo_container">
-        <img id="photo" src="https://imgur.com/gm0R5OY.png" alt="picture_of_ian" />
+        <img
+          id="photo"
+          src="https://imgur.com/gm0R5OY.png"
+          alt="picture_of_ian"
+        />
       </div>
       <div>
         <p>
           Welcome. I am front end web developer with a specialty in ReactJS,
           alongside strong and knowledgable skills in JavaScript, HTML, Vanilla
-          CSS, and testing with Jest and React Testing Library. Additional
-          skills may be viewed under Stack(s).
+          CSS, testing with Jest and React Testing Library, and Ruby on Rails.
+          Additional skills may be viewed under Stack(s).
         </p>
         <p>
           I come from a design background. I once designed and enhanced

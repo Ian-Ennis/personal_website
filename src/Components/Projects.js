@@ -7,7 +7,7 @@ function Projects() {
     {
       title: "Flight Horizons",
       stack: "React frontend with Jest, React Testing Library (RTL) and AWS Amplify",
-      image: "https://imgur.com/i12xXeD.jpeg",
+      image: "https://imgur.com/DgW7ATg.jpeg",
       description:
         "Spaceflight launch tracker with launch vehicles, dates, sites, and mission information for spaceflight enthusiasts",
       links: {
@@ -71,20 +71,6 @@ function Projects() {
         "Utilized client-side routing with React Router for programmatic navigation and conditional component rendering",
         "Passed user input data into open-source HTML5 charts (Chart.js) to render visual records reflecting server-side data",
         "Integrated lightweight, responsive, open-source stylesheets to style raw HTML elements within the user interface",
-      ],
-    },
-    {
-      title: "Starvault",
-      stack: "React",
-      image: "https://imgur.com/6BjmDgr.jpeg",
-      description:
-        "A place for amateur astronomers to upload their interstellar  discoveries",
-      links: {
-        front: "https://github.com/Ian-Ennis/star_vault",
-      },
-      bullets: [
-          "Rendered a modifiable table reflective of stored server information",
-          "Styled with CSS using Flexbox",
       ],
     },
   ];
