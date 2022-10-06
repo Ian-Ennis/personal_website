@@ -7,7 +7,6 @@ function Stack() {
     { id: "skillImg", skill: "JavaScript", icon: "https://imgur.com/DvpgXly.jpeg", alt: "js"},
     { id: "skillImg", skill: "HTML5", icon: "https://imgur.com/Bp2ov10.jpeg", alt: "html5"},
     { id: "skillImg", skill: "CSS", icon: "https://imgur.com/ToC6ujR.jpeg", alt: "css"},
-    { id: "skillImg", skill: "Next.js", icon: "https://imgur.com/fMy4haL.jpeg", alt: "next.js"},
     { id: "skillImg", skill: "GraphQL", icon: "https://imgur.com/aTbXxJF.jpeg", alt: "graphql"},
     { id: "skillImg", skill: "Ruby", icon: "https://imgur.com/knqk4e6.jpeg", alt: "ruby" },
     { id: "skillImg", skill: "Ruby on Rails", icon: "https://imgur.com/pC3M5Jk.jpeg", alt: "rails"},
@@ -27,12 +26,20 @@ function Stack() {
     { skill: "Integrity" },
   ];
 
-  const techSkill = techSkills.map((s, index) => (
+  const techSkillColumnOne = techSkills.slice(0,6).map((s, index) => (
     <p key={index} className="skill">
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {s.skill}
     </p>
   ));
+
+  const techSkillColumnTwo = techSkills.slice(7).map((s, index) => (
+    <p key={index} className="skill">
+      <img id={s.id} src={s.icon} alt={s.alt}/>
+      {s.skill}
+    </p>
+  ));
+
   const personalSkill = personalSkills.map((s, index) => (
     <p key={index} className="skill">
       {s.skill}
@@ -43,7 +50,14 @@ function Stack() {
     <div id="stacks">
       <div id="tech_stack">
         <h4 className="stack_label">Tech Stack</h4>
-        {techSkill}
+        <div id="tech_stacks_container">
+          <div id="tech_stack_one">
+            {techSkillColumnOne}
+          </div>
+          <div id="tech_stack_two">
+            {techSkillColumnTwo}
+          </div>
+        </div>
       </div>
       <div id="personal_stack">
         <h4 className="stack_label">Personal Stack</h4>

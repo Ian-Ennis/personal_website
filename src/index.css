@@ -29,7 +29,7 @@ body {
   padding: 10px;
   margin: 0 auto;
   margin-top: 15%;
-  margin-bottom: -33.5px;
+  margin-bottom: -26.5px;
   max-width: 90%;
 }
 
@@ -62,16 +62,17 @@ body {
   cursor: pointer;
   position: relative;
   margin-top: 6%;
-  margin-bottom: -1.5%;
+  margin-bottom: -2%;
 }
 
 #web_developer {
   font-size: 16pt;
+  margin-bottom: 5%;
 }
 
 #navbar {
   margin-top: 2%;
-  margin-bottom: 1%;
+  /* margin-bottom: 1%; */
 }
 
 .navbar_link {
@@ -107,7 +108,7 @@ body {
 
 @media (max-width: 768px) {
   #about_me {
-    margin-bottom: 55.5px;
+    margin-bottom: 91px;
   }
 }
 
@@ -147,12 +148,12 @@ body {
 }
 
 #projects {
-  margin-bottom: 35.5px;
+  margin-bottom: -28.5px;
 }
 
 @media (max-width: 768px) {
   #projects {
-    margin-bottom: 93.5px;
+    margin-bottom: 95px;
   }
 }
 
@@ -167,7 +168,6 @@ body {
 }
 
 #proj_stack {
-  margin-top: -1%;
   margin-bottom: 3%;
 }
 
@@ -199,6 +199,7 @@ li {
 .screenshot {
   max-width: 50%;
   max-height: auto;
+  margin-top: 0.5%;
   border-radius: 2px;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25)
 }
@@ -209,8 +210,8 @@ li {
 
 @-webkit-keyframes bounce-top {
   0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     opacity: 1;
@@ -314,11 +315,11 @@ li {
 }
 
 #stacks {
-  height: 342px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 1;
   gap: 75px;
   -webkit-animation: bounce-top 0.9s both;
   animation: bounce-top 0.9s both;
@@ -327,7 +328,7 @@ li {
 
 @media (max-width: 768px) {
   #stacks {
-    margin-bottom: 56.5px;
+    margin-bottom: 91px;
   }
 }
 
@@ -356,6 +357,12 @@ li {
   margin-bottom: 5%;
 }
 
+#tech_stacks_container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 20px;
+}
+
 #personal_stack p, #tech_stack p {
   text-align: left;
   margin: 4px;
@@ -371,8 +378,8 @@ li {
             transform: scale3d(1.25, 0.75, 1);
   }
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.75, 1.15, 1);
+            transform: scale3d(0.75, 1.15, 1);
   }
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
@@ -402,8 +409,8 @@ li {
             transform: scale3d(1.25, 0.75, 1);
   }
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.75, 1.15, 1);
+            transform: scale3d(0.75, 1.15, 1);
   }
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
@@ -428,7 +435,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: 4%;
-  margin-bottom: -4%;
+  margin-bottom: -5%;
 	-webkit-animation: jello-horizontal 1.3s both;
 	animation: jello-horizontal 1.3s both;
   animation-delay: .10s;
@@ -436,7 +443,7 @@ li {
 
 @media (max-width: 768px) {
   #inspirations {
-    margin-bottom: 26.5px;
+    margin-bottom: 55.5px;
   }
 }
 
@@ -488,7 +495,7 @@ li {
   justify-content: center;
   gap: 0px 20px;
   max-width: 20%;
-  margin: 0 auto;
+  margin: 0 auto 0.5% auto;
 }
 
 #footer img {

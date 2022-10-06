@@ -42,7 +42,7 @@ function Projects() {
     {
       title: "Sigma Shipyards",
       stack: "React/Redux front end with Ruby on Rails API",
-      image: "https://imgur.com/WSzd8JR.jpeg",
+      image: "https://imgur.com/bWygqF3.jpeg",
       description:
         "Game-focused spaceship builder with the purpose of guiding users through a journey in sci-fi space retro-futurism",
       links: {
