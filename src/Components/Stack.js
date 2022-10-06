@@ -1,5 +1,3 @@
-import React from "react";
-
 function Stack() {
   const techSkills = [
     { id: "skillImg", skill: "ReactJS", icon: "https://imgur.com/KzTnCzI.jpeg", alt: "react"},

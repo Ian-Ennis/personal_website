@@ -1,5 +1,3 @@
-import React from "react";
-
 function Entry({ handleEntryClick }) {
     return (
       <div className="entry_screen">
@@ -9,3 +7,6 @@ function Entry({ handleEntryClick }) {
 }
 
 export default Entry
+
+
+

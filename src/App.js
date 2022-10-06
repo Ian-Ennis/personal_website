@@ -10,30 +10,24 @@ import Interests from "./Components/Inspirations";
 import Footer from "./Components/Footer";
 
 function App() {
-  const [home, setHome] = useState(true)
   const navigate = useNavigate();
 
   const handleHeaderClick = () => {
+    window.sessionStorage.clear()
     navigate('/')
-    window.location.reload();
   }
 
   const handleEntryClick = () => {
-    if (home) {
-      document.getElementById("entry_logo").classList = "move"
-      setTimeout(()=>{
-        setHome(false)
-        navigate('/about')
-      }, 2000)
-    } else {
-      setHome(true)
-      navigate('/')
-    }
+    document.getElementById("entry_logo").classList = "move"
+    setTimeout(()=>{
+      window.sessionStorage.setItem("retain_header", 1)
+      navigate('/about')
+    }, 2000)
   }
 
   return (
     <div className="App">
-      {home ? null : 
+      {!window.sessionStorage.getItem("retain_header") ? null : 
       <header>
         <p id="header" onClick={handleHeaderClick}>Ian Ennis</p>
         <p id="web_developer">Front End Web Developer</p>
