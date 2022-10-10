@@ -7,7 +7,7 @@ function Projects() {
     {
       title: "Flight Horizons",
       stack: "React frontend with Jest, React Testing Library (RTL) and AWS Amplify",
-      image: "https://imgur.com/DgW7ATg.jpeg",
+      image: "https://imgur.com/ZWjHlQH.jpeg",
       description:
         "Spaceflight launch tracker with launch vehicles, dates, sites, and mission information for spaceflight enthusiasts",
       links: {
