@@ -1,17 +1,10 @@
 function About() {
   return (
     <div id="about_me">
-      <div id="photo_container">
-        <img
-          id="photo"
-          src="https://imgur.com/gm0R5OY.png"
-          alt="picture_of_ian"
-        />
-      </div>
       <div>
         <p>
           Welcome. I am front end web developer with a specialty in ReactJS,
-          alongside strong and knowledgable skills in JavaScript, HTML, Vanilla
+          alongside strong and knowledgable skills in JavaScript, HTML5, Vanilla
           CSS, testing with Jest and React Testing Library, and Ruby on Rails.
           Additional skills may be viewed under Stack(s).
         </p>
@@ -26,10 +19,17 @@ function About() {
         </p>
         <p>
           I thoroughly enjoy exploring the confluence of programming, user
-          experience, and positive intentions. Through creating intuitive,
-          memorable user interfaces, I can continue to give back to my users.
-          Come check out my work.
+          experience, and positive intentions. Through creating intuitive and
+          enjoyable user interfaces backed by RESTful API's, I can
+          continue to give back to my users. Come check out my work.
         </p>
+      </div>
+      <div id="photo_container">
+        <img
+          id="photo"
+          src="https://imgur.com/gm0R5OY.png"
+          alt="picture_of_ian"
+        />
       </div>
     </div>
   );
