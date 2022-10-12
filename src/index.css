@@ -205,7 +205,8 @@ li {
   max-height: auto;
   margin-top: 0.5%;
   border-radius: 2px;
-  box-shadow: 6px 6px 5px 0px #131313a3
+  box-shadow: 6px 6px 5px 0px #131313a3;
+  cursor: pointer;
 }
 
 .filler_container {
