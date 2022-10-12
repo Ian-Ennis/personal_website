@@ -2,12 +2,13 @@ import { useState } from "react";
 import EachProject from "./EachProject";
 
 function Projects() {
+  const [showDetails, setShowDetails] = useState(null);
 
   const projectData = [
     {
       title: "Flight Horizons",
       stack: "React frontend with Jest, React Testing Library (RTL) and AWS Amplify",
-      image: "https://imgur.com/ZWjHlQH.jpeg",
+      image: "https://portfolio-ian-ennis.s3.us-west-2.amazonaws.com/fh_home_screenshot.png",
       description:
         "Spaceflight launch tracker with launch vehicles, dates, sites, and mission information for spaceflight enthusiasts",
       links: {
@@ -24,7 +25,7 @@ function Projects() {
     {
       title: "Evocation Station",
       stack: "React front end with Ruby on Rails API and AWS file storage",
-      image: "https://imgur.com/XXDgnSp.jpeg",
+      image: "https://portfolio-ian-ennis.s3.us-west-2.amazonaws.com/es_signup.png",
       description:
         "Where users can create and customize evocative, meaningful collections of images, sounds, and writings",
       links: {
@@ -42,7 +43,7 @@ function Projects() {
     {
       title: "Sigma Shipyards",
       stack: "React/Redux front end with Ruby on Rails API",
-      image: "https://imgur.com/bWygqF3.jpeg",
+      image: "https://portfolio-ian-ennis.s3.us-west-2.amazonaws.com/ss_shipyard.png",
       description:
         "Game-focused spaceship builder with the purpose of guiding users through a journey in sci-fi space retro-futurism",
       links: {
@@ -59,7 +60,7 @@ function Projects() {
     {
       title: "Leg-Up Activity Tracker",
       stack: "React front end with Ruby on Rails API",
-      image: "https://imgur.com/t5ToHxX.jpeg",
+      image: "https://portfolio-ian-ennis.s3.us-west-2.amazonaws.com/at_description_with_chart.png",
       description:
         "A tool to provide fans of physical activity with the ability to record activity sessions for meditation, yoga, and cardio",
       links: {
@@ -75,15 +76,13 @@ function Projects() {
     },
   ];
   
-  const [showDetails, setShowDetails] = useState(null);
-
   function handleProjectClick(e) {
     e.preventDefault();
     
     if (showDetails !== e.target.id) {
-        setShowDetails(e.target.id)
+      setShowDetails(e.target.id)
     } else {
-        setShowDetails(null);
+      setShowDetails(null);
     }
   }
 

@@ -1,4 +1,10 @@
+import { useState } from 'react'
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
 function EachProject({ project, handleProjectClick, selectedProject }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   const bulletPoints = project.bullets.map((b, index) => (
     <li key={index}>{b}</li>
   ));
@@ -23,7 +29,16 @@ function EachProject({ project, handleProjectClick, selectedProject }) {
             className="screenshot"
             src={project.image}
             alt="project_screenshot"
+            onClick={() => setIsOpen(true)}
           />
+          {isOpen && <Lightbox
+            mainSrc={project.image}
+            enableZoom={false}
+            imageTitle={`Preview: ${project.title}`}
+            imageCaption={`Project Description: ${project.description}`}
+            closeLabel={`Close preview of ${project.title}`}
+            onCloseRequest={() => setIsOpen(false)}
+          />}
           <div className="filler_container"></div>
           {project.links.url ? (
             <a href={project.links.url} target="_blank">Webpage | </a>

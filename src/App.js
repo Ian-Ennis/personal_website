@@ -1,5 +1,4 @@
 import "./index.css";
-import { useState} from "react";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import About from "./Components/About";
