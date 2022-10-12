@@ -101,7 +101,6 @@ body {
 #about_me {
   height: 350px;
   display: flex;
-  /* flex-direction: column; */
   gap: 0px 20px;
   -webkit-animation: view 1 1s linear;
   animation: view 1 1s linear;
@@ -138,8 +137,8 @@ body {
   width: 200px;
   border-radius: 2px;
   box-shadow:-6px 6px 5px 0px #131313a3;
-  -webkit-animation: view 1 .25s linear;
-  animation: view 1 .25s linear;
+  -webkit-animation: view 1 linear;
+  animation: view 1 linear;
 }
 
 #about_me p {
