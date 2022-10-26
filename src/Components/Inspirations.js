@@ -1,6 +1,7 @@
 function Inspirations() {
 
   const inspirations = [
+    {insp: "Denver School of the Arts", link: "https://dsa.dpsk12.org/"},
     {insp: "Bungie", link: "https://www.bungie.net/"},
     {insp: "Bethesda Game Studios", link: "https://bethesda.net/en/dashboard"},
     {insp: "Ambrosia Software", link: "https://en.wikipedia.org/wiki/Ambrosia_Software"},

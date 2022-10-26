@@ -41,7 +41,7 @@ body {
 
 #entry_logo {
   max-width: 70%;
-  transition: transform 3s ease;
+  transition: transform 1.5s ease-in;
 }
 
 #entry_logo:hover {
@@ -129,7 +129,7 @@ body {
 
 #photo_container {
   margin: 0 auto;
-  margin-top: 4.5%;
+  margin-top: 3.5%;
   width: 200px;
 }
 
