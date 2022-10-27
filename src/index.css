@@ -41,7 +41,7 @@ body {
 
 #entry_logo {
   max-width: 70%;
-  transition: transform 1.5s ease-in;
+  transition: transform 1.5s ease;
 }
 
 #entry_logo:hover {

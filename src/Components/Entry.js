@@ -4,7 +4,7 @@ function Entry({ handleEntryClick }) {
       <img
         id="entry_logo"
         onClick={handleEntryClick}
-        src="https://imgur.com/9zQw3pA.jpeg"
+        src="https://portfolio-ian-ennis.s3.us-west-2.amazonaws.com/Tree.png"
         alt="entry_logo"
       />
     </div>
