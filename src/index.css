@@ -29,7 +29,8 @@ body {
   /* padding: 10px; */
   margin: 0 auto;
   margin-top: 15%;
-  margin-bottom: 37%;
+  /* margin-bottom: 37%; */
+  margin-bottom: 295px;
   max-width: 90%;
   height: 350px;
 }
@@ -150,7 +151,8 @@ body {
 #projects_container {
   /* margin-bottom: -80.5px; */
   /* height: 350px; */
-  margin-bottom: -2.5%;
+  /* margin-bottom: -2.5%; */
+  margin-bottom: -21px;
 }
 
 @media (max-width: 768px) {
@@ -467,6 +469,7 @@ li {
 
 #footer {
   margin-top: 20%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
