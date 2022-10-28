@@ -16,12 +16,12 @@ function Projects() {
         front: "https://github.com/Ian-Ennis/flight_horizons",
       },
       bullets: [
+        "Incorporated Typescript to reduce type-safety bugs and define object structure for nested API data",
+        "Rendered CSS animations once on initial page load using session storage; tested timeout functionality using Jest fake timers",
         "Ensured correct UI render using inline snapshot tests from React Testing Library",
         "Mocked fetch requests using Jest to eliminate API calls during testing",
-        "Rendered CSS animations on initial page load using session storage; tested timeout functionality using Jest fake timers",
-        "Deployed to AWS Amplify Studio using a Continuous Integration and Continuous Delivery (CI/CD) pipeline",
-      ],
-    },
+        "Deployed to Amazon Web Services (AWS) Amplify Studio with S3 for file storage and pipeline for CI/CD"
+    ]},
     {
       title: "Evocation Station",
       stack: "React front end with Ruby on Rails API and AWS file storage",
