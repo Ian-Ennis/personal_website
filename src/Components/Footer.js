@@ -2,13 +2,12 @@ function Footer() {
   return (
     <>
       <div id="footer">
-      <p>Copyright © 2022 by Ian Ennis</p>
-      <p>All rights reserved.</p>
-      <p>
-        Images provided by https://www.pexels.com/ &nbsp; | &nbsp; Sounds
-        provided by https://freesound.org/
-      </p>
-    </div>
+        <div id="icons">
+          <a href="https://www.linkedin.com/in/ian-ennis-tanstaafl-slatfatf/" target="_blank"><img src="https://imgur.com/SFF3aAh.jpeg" alt="linkedin"/></a>
+          <a href="https://github.com/Ian-Ennis" target="_blank"><img src="https://imgur.com/Z7oVssA.jpeg" alt="github"/></a>
+        </div>
+          <a href="mailto:ipatrickenn7@gmail.com">ipatrickenn7@gmail.com</a>
+      </div>
     </>
   );
 }

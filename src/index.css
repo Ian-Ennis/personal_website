@@ -29,7 +29,7 @@ body {
   /* padding: 10px; */
   margin: 0 auto;
   margin-top: 15%;
-  /* margin-bottom: -48.5px; */
+  margin-bottom: 37%;
   max-width: 90%;
   height: 350px;
 }
@@ -150,6 +150,7 @@ body {
 #projects_container {
   /* margin-bottom: -80.5px; */
   /* height: 350px; */
+  margin-bottom: -2.5%;
 }
 
 @media (max-width: 768px) {
@@ -464,12 +465,9 @@ li {
   margin: 4px;
 }
 
-/* #footer {
-  width: 75%;
-  position: fixed;
-  left: 50%;
-  margin-left: -37.5%;
-  margin-top: 10%;
+#footer {
+  margin-top: 20%;
+  text-align: center;
 }
 
 @media (max-width: 390px) {
@@ -492,15 +490,9 @@ li {
   gap: 0px 20px;
   max-width: 20%;
   margin: 0 auto 0.5% auto;
-} */
+}
 
-/* #footer img {
+#footer img {
   max-width: 20px;
   margin: 5%;
-} */
-
-#footer {
-  margin-top: 20%;
-  text-align: center;
-  /* color: rgb(92, 92, 92); */
 }
