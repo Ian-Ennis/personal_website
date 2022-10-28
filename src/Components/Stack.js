@@ -58,7 +58,6 @@ function Stack() {
 
   return (
     <div id="stacks_container">
-
       <div id="tech_stack">
         <h4 className="stack_label">Tech Stack</h4>
         <div id="tech_stack_container">
@@ -70,7 +69,6 @@ function Stack() {
           </div>
         </div>
       </div>
-
       <div id="personal_stack">
         <h4 className="stack_label">Personal Stack</h4>
         <div id="personal_stack_container">
@@ -82,7 +80,6 @@ function Stack() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
