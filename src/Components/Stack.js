@@ -24,26 +24,33 @@ function Stack() {
     { skill: "Commitment" },
     { skill: "Accountability" },
     { skill: "Adaptability" },
-    { skill: "Empathy" },
     { skill: "Organization" },
+    { skill: "Empathy" },
     { skill: "Integrity" },
+    { skill: "Dependability" },
   ];
 
   const techSkillColumnOne = techSkills.slice(0,8).map((s, index) => (
-    <p key={index}>
+    <p key={index} className="skill">
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {` ${s.skill}`}
     </p>
   ));
 
   const techSkillColumnTwo = techSkills.slice(8).map((s, index) => (
-    <p key={index}>
+    <p key={index} className="skill">
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {` ${s.skill}`}
     </p>
   ));
 
-  const personalSkill = personalSkills.map((s, index) => (
+  const personalSkillColumnOne = personalSkills.slice(0,5).map((s, index) => (
+    <p key={index} className="skill">
+      {s.skill}
+    </p>
+  ));
+
+  const personalSkillColumnTwo = personalSkills.slice(5).map((s, index) => (
     <p key={index} className="skill">
       {s.skill}
     </p>
@@ -51,9 +58,10 @@ function Stack() {
 
   return (
     <div id="stacks_container">
+
       <div id="tech_stack">
         <h4 className="stack_label">Tech Stack</h4>
-        <div id="tech_stacks_container">
+        <div id="tech_stack_container">
           <div>
             {techSkillColumnOne}
           </div>
@@ -62,10 +70,19 @@ function Stack() {
           </div>
         </div>
       </div>
+
       <div id="personal_stack">
         <h4 className="stack_label">Personal Stack</h4>
-        {personalSkill}
+        <div id="personal_stack_container">
+          <div>
+            {personalSkillColumnOne}
+          </div>
+          <div>
+            {personalSkillColumnTwo}
+          </div>
+        </div>
       </div>
+
     </div>
   );
 }
