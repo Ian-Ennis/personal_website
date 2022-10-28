@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div id="about_me">
+    <div id="about_me_container">
       <div id="photo_container">
         <img
           id="photo"

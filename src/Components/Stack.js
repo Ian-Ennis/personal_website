@@ -30,14 +30,14 @@ function Stack() {
   ];
 
   const techSkillColumnOne = techSkills.slice(0,8).map((s, index) => (
-    <p key={index} className="skill">
+    <p key={index}>
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {` ${s.skill}`}
     </p>
   ));
 
   const techSkillColumnTwo = techSkills.slice(8).map((s, index) => (
-    <p key={index} className="skill">
+    <p key={index}>
       <img id={s.id} src={s.icon} alt={s.alt}/>
       {` ${s.skill}`}
     </p>
@@ -50,14 +50,14 @@ function Stack() {
   ));
 
   return (
-    <div id="stacks">
+    <div id="stacks_container">
       <div id="tech_stack">
         <h4 className="stack_label">Tech Stack</h4>
         <div id="tech_stacks_container">
-          <div id="tech_stack_one">
+          <div>
             {techSkillColumnOne}
           </div>
-          <div id="tech_stack_two">
+          <div>
             {techSkillColumnTwo}
           </div>
         </div>

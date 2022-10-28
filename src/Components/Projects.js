@@ -96,7 +96,7 @@ function Projects() {
   ));
 
   return (
-  <div id="projects">{project}</div>
+  <div id="projects_container">{project}</div>
   )
 }
 
