@@ -33,6 +33,12 @@ body {
   height: 350px;
 }
 
+@media (max-width: 1440px) {
+  .entry_screen {
+    margin-bottom: 240px;
+  }
+}
+
 @media (max-width: 768px) {
   .entry_screen {
     margin-bottom: 280px;
