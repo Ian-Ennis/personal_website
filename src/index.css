@@ -28,14 +28,14 @@ body {
   background-size: 100% 100%;
   margin: 0 auto;
   margin-top: 15%;
-  margin-bottom: 295px;
+  margin-bottom: 297px;
   max-width: 90%;
   height: 350px;
 }
 
 @media (max-width: 1440px) {
   .entry_screen {
-    margin-bottom: 240px;
+    margin-bottom: 242px;
   }
 }
 
