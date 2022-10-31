@@ -28,7 +28,7 @@ body {
   background-size: 100% 100%;
   margin: 0 auto;
   margin-top: 15%;
-  margin-bottom: 296px;
+  margin-bottom: 295px;
   max-width: 90%;
   height: 350px;
 }
@@ -103,6 +103,12 @@ body {
   animation: view 1 1s linear;
 } 
 
+@media (max-width: 1440px) {
+  #about_me_container {
+    margin-bottom: -55px;
+  }
+}
+
 @keyframes view {
   0% {
     opacity: 0.0;
@@ -154,6 +160,12 @@ body {
 #projects_container {
   margin-top: 3%;
   margin-bottom: -23px;
+}
+
+@media (max-width: 1440px) {
+  #projects_container {
+    margin-bottom: -78px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -334,6 +346,12 @@ li {
   }
 }
 
+@media (max-width: 1440px) {
+  #stacks_container {
+    margin-bottom: -63px;
+  }
+}
+
 @media (max-width: 768px) {
   #stacks_container {
     margin-bottom: -7px;
@@ -458,6 +476,12 @@ li {
   100% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
+  }
+}
+
+@media (max-width: 1440px) {
+  #inspirations_container {
+    margin-bottom: -87px;
   }
 }
 
