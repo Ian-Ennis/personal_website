@@ -1,4 +1,5 @@
 import "./index.css";
+import { useState } from 'react'
 import { useNavigate, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import About from "./Components/About";
@@ -10,6 +11,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   const navigate = useNavigate();
+  const [theme, setTheme] = useState('light')
 
   const handleHeaderClick = () => {
     window.sessionStorage.clear()
@@ -24,8 +26,14 @@ function App() {
     }, 2000)
   }
 
+  function changeTheme(e) {
+    e.preventDefault();
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
+      <button onClick={changeTheme}>changeTheme</button>
       {!window.sessionStorage.getItem("retain_header") ? null : 
       <header>
         <p id="header" onClick={handleHeaderClick}>Ian Ennis</p>
