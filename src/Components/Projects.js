@@ -29,7 +29,6 @@ function Projects() {
       description:
         "Where users can create and customize evocative, meaningful collections of images, sounds, and writings",
       links: {
-        url: "https://evocation-station.herokuapp.com/",
         front: "https://github.com/Ian-Ennis/evocation_station",
         back: "https://github.com/Ian-Ennis/evocation_station_rails_API",
         demo: "https://www.loom.com/share/874b8157ebd84b1581e79de22f53a5e0",
