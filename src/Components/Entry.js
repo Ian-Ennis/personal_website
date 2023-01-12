@@ -1,6 +1,7 @@
 function Entry({ handleEntryClick }) {
   return (
     <div className="entry_screen">
+
       <img
         id="entry_logo"
         onClick={handleEntryClick}
