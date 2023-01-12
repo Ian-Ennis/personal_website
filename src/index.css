@@ -45,6 +45,72 @@ body {
   }
 }
 
+.warp__placeholder{
+  position: absolute;
+  color: transparent;
+  font-size: .1px;
+}
+
+.warp {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 4%;
+  right: 74%;
+  height: 90px;
+  font: normal 50px/1 ultra;
+}
+
+.warp span {
+  font-family: "Avenir-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+[class*='warp__'] {
+  display: block;
+  position: absolute;
+}
+
+.warp__0 {
+  transform-origin: 50% 44px;
+  transform: translate(64.8027px,70.229px) rotate(-0.741522rad);
+}
+
+.warp__1 {
+  transform-origin: 50% 44px;
+  transform: translate(98.3562px,46.9242px) rotate(-0.480027rad);
+}
+
+.warp__2 {
+  transform-origin: 50% 44px;
+  transform: translate(135.8931px,32.848px) rotate(-0.269824rad);
+}
+
+.warp__3 {
+  transform-origin: 50% 44px;
+  transform: translate(172.6507px,26.062799999999996px) rotate(-0.079311rad);
+}
+
+.warp__4 {
+  transform-origin: 50% 44px;
+  transform: translate(213.6411px,26.0214px) rotate(0.076907rad);
+}
+
+.warp__5 {
+  transform-origin: 50% 44px;
+  transform: translate(240.09519999999998px,30.521600000000007px) rotate(0.222746rad);
+}
+
+.warp__6 {
+  transform-origin: 50% 44px;
+  transform: translate(270.9237px,46.2685px) rotate(0.474343rad);
+}
+
+.warp__7 {
+  transform-origin: 50% 44px;
+  transform: translate(321.376px,74.0013px) rotate(0.785491rad);
+}
+
+
 #entry_logo {
   max-width: 70%;
   transition: transform 1.5s ease;
