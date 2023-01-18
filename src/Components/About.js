@@ -17,7 +17,7 @@ function About() {
         </p>
         <p>
           I once designed and enhanced aesthetics of highly-visible outdoor
-          public spaces, and have carried my design pallet forward as I create
+          public spaces, and have carried my design pallet forward to create
           visually-pleasing and exciting user interfaces. I bring experience
           collaborating on highly motivated teams that are dedicated to solving
           problems and delivering quality.
