@@ -18,6 +18,7 @@ function App() {
 
   const handleEntryClick = () => {
     document.getElementById("entry_logo").classList = "move"
+    document.getElementById("curved_text").classList = "move"
     setTimeout(()=>{
       window.sessionStorage.setItem("retain_header", 1)
       navigate('/about')
