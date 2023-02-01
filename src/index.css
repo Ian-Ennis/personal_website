@@ -30,18 +30,18 @@ body {
   margin-top: 15%;
   margin-bottom: 400px;
   max-width: 90%;
-  height: 450px;
+  height: 422px;
 
-  /* transition: transform 1.5s ease; */
-}
-
-.entry_screen {
   transition: transform 1.5s ease;
 }
 
 .entry_screen:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.entry_screen:hover #curved_text {
+  opacity: 0;
 }
 
 #entry_logo {
@@ -71,12 +71,13 @@ body {
   flex-direction: column;
   justify-content: center;
   z-index: 1;
-  font-size: 32px;
-  width: 58%;
-  height: 25px;
+  font-size: 30px;
+  width: 57%;
+  height: 10px;
   margin: 0 auto;
-  margin-top: -100px;
-  margin-bottom: 100px;
+  margin-top: -60px;
+  margin-bottom: 60px;
+  transition: opacity 1s ease-out;
 }
 
 .warp span {
@@ -143,8 +144,8 @@ body {
   font-size: 32px;
   width: 58%;
   margin: 0 auto;
-  margin-top: -100px;
-  margin-bottom: 100px;
+  margin-top: -60px;
+  margin-bottom: 60px;
 }
 
 #entry_logo.move {
